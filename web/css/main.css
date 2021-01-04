@@ -62,17 +62,21 @@ strong { font-weight: 600; }
 .welcome-message { margin: 0 0 3em; }
 
 .hero h1 {
-  font-size: 41px;
+  font-size: 35px;
   font-weight: 400;
   color: #333;
-  line-height: 1.25;
+  line-height: 1;
 }
 
 .hero h2 {
-  font-size: 18px;
+  font-size: 30px;
   color: #666;
-  line-height: 1.5;
+  line-height: 1;
   font-weight: 300;
+}
+
+.hero h3 {
+  color: #666;
 }
 
 .learn-more { margin-bottom: .75em; }
@@ -806,12 +810,14 @@ blockquote { font-size: 22px; }
 .book-cover { margin-top: 0; }
 
 .hero h1 {
-  font-size: 73.981px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1.17;
 }
 
-.hero h2 { font-size: 20.25px; }
+.hero h2 { font-size: 38px; line-height: 1.17;}
+
+.hero h3 { line-height: 1.6;}
 
 .welcome-message { margin: 4.5em 0 3em; }
 
@@ -880,3 +886,19 @@ img.author-img { margin-bottom: 0; }
   margin-bottom: .75em;
 }
 }
+
+/* ==========================================================================
+   Farsi Font
+   ========================================================================== */
+
+@font-face {
+  font-family: 'byekan';
+  src: url('../fonts/BYekan.eot');
+  src: url('../fonts/BYekan.woff') format('woff');
+  url('../fonts/BYekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  body{
+  font-family: "byekan";
+  }
