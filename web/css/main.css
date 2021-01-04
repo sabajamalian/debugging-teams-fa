@@ -807,7 +807,7 @@ blockquote { font-size: 22px; }
 
 .logo { margin-bottom: 3em; }
 
-.book-cover { margin-top: 0; }
+.book-cover { margin-top: 0; padding: 25px 25px 25px 25px; }
 
 .hero h1 {
   font-size: 60px;
