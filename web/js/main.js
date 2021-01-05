@@ -64,14 +64,15 @@ $(function() {
     $('.counter').waypoint(function() {
         
         var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+
         
         $('.total-number-1').animateNumber({
-            number: 100, //change value here
+            number: 205, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
         $('.total-number-2').animateNumber({
-            number: 1000, //change value here
+            number: 1, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
