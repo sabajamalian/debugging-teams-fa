@@ -11,7 +11,7 @@ $(function() {
 	
 	    $('#mc-form').ajaxChimp({
         callback: callbackFunctionCta,
-        url: 'http://gmail.us7.list-manage.com/subscribe/post?u=43a65b0d096d0ed916a5b161a&id=382f2f7d53'
+        url: 'https://gmail.us7.list-manage.com/subscribe/post?u=43a65b0d096d0ed916a5b161a&id=382f2f7d53'
     });
 
     function callbackFunctionCta(resp) {
