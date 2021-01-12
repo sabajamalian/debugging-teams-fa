@@ -66,7 +66,7 @@ $(function() {
 
         
         $('.total-number-1').animateNumber({
-            number: 205, //change value here
+            number: 211, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
