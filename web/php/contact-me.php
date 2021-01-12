@@ -1,6 +1,6 @@
 <?php
  
-    $to = "pixininja@csmthemes.com"; //Change email here
+    $to = "jamalian.saba@gmail.com"; //Change email here
     $from = $_REQUEST['email']; 
     $name = $_REQUEST['name']; 
     $headers = "From: $from"; 
