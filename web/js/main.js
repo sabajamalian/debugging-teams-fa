@@ -2,7 +2,14 @@ $(function() {
     "use strict";
 
 
-	
+    
+    $(".download").on('click' , function() {
+        $.ajax({
+            url : 'https://kvdb.io/RhZS4SjfssXPLxWgS69gcY/dlcount',
+            data : '+1',
+            type : 'PATCH',
+          });
+    });
 	
 	
 	    /* ==========================================================================
@@ -64,6 +71,18 @@ $(function() {
         
         var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
 
+        var download_counts=0;
+
+        $.ajax({
+            'async': false,
+            'cache': false,
+            'type': "GET",
+            'url': "https://kvdb.io/RhZS4SjfssXPLxWgS69gcY/dlcount",            
+            'success': function (data) {
+                console.log(data);
+                download_counts = data;
+            }
+        });
         
         $('.total-number-1').animateNumber({
             number: 211, //change value here
@@ -71,21 +90,10 @@ $(function() {
         }, 2000);
         
         $('.total-number-2').animateNumber({
-            number: 1, //change value here
+            number: download_counts,
             numberStep: comma_separator_number_step
         }, 2000);
         
-        $('.total-number-3').animateNumber({
-            number: 1200, //change value here
-            numberStep: comma_separator_number_step
-        }, 2000);
-        
-        $('.total-number-4').animateNumber({
-            number: 1500, //change value here
-            numberStep: comma_separator_number_step
-        }, 2000);
-    
-    
     
     }, {
         offset: '80%'
@@ -254,7 +262,7 @@ $(function() {
 			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  	$(".navbar-nav li a").on('click', function() {
 	    $(".navbar-collapse").collapse('hide');
-	});
+    });
 }
 
 
