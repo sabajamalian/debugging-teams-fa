@@ -4,11 +4,15 @@ $(function() {
 
     
     $(".download").on('click' , function() {
+        //count number of downloads
         $.ajax({
             url : 'https://kvdb.io/RhZS4SjfssXPLxWgS69gcY/dlcount',
             data : '+1',
             type : 'PATCH',
           });
+        
+          //download book
+          window.open('static/DebuggingTeams-fa.pdf', '_blank');
     });
 	
 	
