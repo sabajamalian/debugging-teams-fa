@@ -14,7 +14,18 @@ $(function() {
           //download book
           window.open('static/DebuggingTeams-fa.pdf', '_blank');
     });
-	
+    
+    $(".epub").on('click' , function() {
+        //count number of downloads
+        $.ajax({
+            url : 'https://kvdb.io/RhZS4SjfssXPLxWgS69gcY/dlcount',
+            data : '+1',
+            type : 'PATCH',
+          });
+        
+          //download book in epub
+          window.open('static/DebuggingTeams-fa.epub', '_blank');
+    });
 	
 	    /* ==========================================================================
        CTA Form   
